@@ -120,7 +120,7 @@ class __TwigTemplate_1f9e00c3ce409b2eac402f598d5fa28fbc1c565ca10d23fd46aa292d0a1
         echo $this->env->getExtension('routing')->getUrl("admin");
         echo "\">";
         if ( !$this->env->getExtension('topxia_web_twig')->getSetting("copyright.owned")) {
-            echo "EduSoho";
+            echo "网络云课堂";
         }
         echo "管理后台</a>
       </div>

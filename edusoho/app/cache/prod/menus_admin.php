@@ -10,11 +10,8 @@ return array (
     array (
       0 => 'admin_user',
       1 => 'admin_course',
-      2 => 'admin_operation',
-      3 => 'admin_order',
-      4 => 'admin_finance',
-      5 => 'admin_app',
-      6 => 'admin_system',
+      2 => 'admin_app',
+      3 => 'admin_system',
     ),
     'group' => 1,
   ),
@@ -53,64 +50,13 @@ return array (
     ),
     'group' => 1,
   ),
-  'admin_operation' => 
-  array (
-    'name' => '运营',
-    'parent' => 'admin',
-    'router_name' => 'admin_article',
-    'code' => 'admin_operation',
-    'weight' => 400,
-    'children' => 
-    array (
-      0 => 'admin_operation_article',
-      1 => 'admin_operation_group',
-      2 => 'admin_announcement',
-      3 => 'admin_batch_notification',
-      4 => 'admin_operation_block',
-      5 => 'admin_operation_content',
-      6 => 'admin_operation_analysis_register',
-      7 => 'admin_operation_mobile',
-    ),
-    'group' => 1,
-  ),
-  'admin_order' => 
-  array (
-    'name' => '订单',
-    'parent' => 'admin',
-    'router_name' => 'admin_course_order_manage',
-    'code' => 'admin_order',
-    'weight' => 500,
-    'children' => 
-    array (
-      0 => 'admin_course_order',
-      1 => 'admin_classroom_order',
-      2 => 'admin_coin_orders',
-    ),
-    'group' => 1,
-  ),
-  'admin_finance' => 
-  array (
-    'name' => '账务',
-    'parent' => 'admin',
-    'router_name' => 'admin_bill',
-    'code' => 'admin_finance',
-    'weight' => 600,
-    'children' => 
-    array (
-      0 => 'admin_bills',
-      1 => 'admin_coin_user',
-      2 => 'admin_course_refunds',
-      3 => 'admin_classroom_refunds',
-    ),
-    'group' => 1,
-  ),
   'admin_app' => 
   array (
     'name' => '教育云',
     'parent' => 'admin',
     'router_name' => 'admin_my_cloud',
     'code' => 'admin_app',
-    'weight' => 700,
+    'weight' => 400,
     'children' => 
     array (
       0 => 'admin_my_cloud',
@@ -126,7 +72,7 @@ return array (
     'parent' => 'admin',
     'router_name' => 'admin_setting_site',
     'code' => 'admin_system',
-    'weight' => 800,
+    'weight' => 500,
     'children' => 
     array (
       0 => 'admin_setting',
@@ -148,7 +94,7 @@ return array (
     'parent' => 'admin_operation',
     'router_name' => 'admin_article',
     'code' => 'admin_operation_article',
-    'weight' => 900,
+    'weight' => 600,
     'children' => 
     array (
       0 => 'admin_operation_article_manage',
@@ -162,7 +108,7 @@ return array (
     'parent' => 'admin_operation',
     'router_name' => 'admin_group',
     'code' => 'admin_operation_group',
-    'weight' => 1000,
+    'weight' => 700,
     'children' => 
     array (
       0 => 'admin_operation_group_manage',
@@ -176,7 +122,7 @@ return array (
     'parent' => 'admin_operation_mobile',
     'router_name' => 'admin_operation_mobile',
     'code' => 'admin_operation_mobile_banner_manage',
-    'weight' => 1100,
+    'weight' => 800,
     'children' => 
     array (
     ),
@@ -188,7 +134,7 @@ return array (
     'parent' => 'admin_operation_mobile',
     'router_name' => 'admin_operation_mobile_select',
     'code' => 'admin_operation_mobile_select_manage',
-    'weight' => 1200,
+    'weight' => 900,
     'children' => 
     array (
     ),
@@ -201,7 +147,7 @@ return array (
     'before' => 'admin_batch_notification',
     'group' => 2,
     'code' => 'admin_announcement',
-    'weight' => 1298,
+    'weight' => 998,
     'children' => 
     array (
       0 => 'admin_announcement_create',
@@ -214,7 +160,7 @@ return array (
     'before' => 'admin_operation_block',
     'group' => 2,
     'code' => 'admin_batch_notification',
-    'weight' => 1299,
+    'weight' => 999,
     'children' => 
     array (
       0 => 'admin_batch_notification_create',
@@ -231,7 +177,7 @@ return array (
     ),
     'group' => 2,
     'code' => 'admin_operation_block',
-    'weight' => 1300,
+    'weight' => 1000,
     'children' => 
     array (
       0 => 'admin_block_visual_edit',
@@ -248,7 +194,7 @@ return array (
     ),
     'router_params_context' => 1,
     'code' => 'admin_block_visual_edit',
-    'weight' => 1400,
+    'weight' => 1100,
     'children' => 
     array (
     ),
@@ -264,7 +210,7 @@ return array (
     ),
     'router_params_context' => 1,
     'code' => 'admin_block_visual_edit_history',
-    'weight' => 1500,
+    'weight' => 1200,
     'children' => 
     array (
     ),
@@ -281,7 +227,7 @@ return array (
     ),
     'group' => 2,
     'code' => 'admin_operation_content',
-    'weight' => 1600,
+    'weight' => 1300,
     'children' => 
     array (
     ),
@@ -298,7 +244,7 @@ return array (
     'after' => 'admin_operation_content',
     'group' => 3,
     'code' => 'admin_operation_analysis_register',
-    'weight' => 1601,
+    'weight' => 1301,
     'children' => 
     array (
     ),
@@ -309,7 +255,7 @@ return array (
     'parent' => 'admin_operation',
     'group' => 2,
     'code' => 'admin_operation_mobile',
-    'weight' => 1700,
+    'weight' => 1400,
     'children' => 
     array (
       0 => 'admin_operation_mobile_banner_manage',
@@ -323,7 +269,7 @@ return array (
     'router_name' => 'admin_article_create',
     'group' => 2,
     'code' => 'admin_operation_article_create',
-    'weight' => 1900,
+    'weight' => 1600,
     'children' => 
     array (
     ),
@@ -336,7 +282,7 @@ return array (
     'mode' => 'modal',
     'group' => 2,
     'code' => 'admin_operation_category_create',
-    'weight' => 2000,
+    'weight' => 1700,
     'children' => 
     array (
     ),
@@ -347,7 +293,7 @@ return array (
     'parent' => 'admin_operation_article',
     'router_name' => 'admin_article',
     'code' => 'admin_operation_article_manage',
-    'weight' => 2100,
+    'weight' => 1800,
     'children' => 
     array (
       0 => 'admin_operation_article_create',
@@ -360,7 +306,7 @@ return array (
     'parent' => 'admin_operation_article',
     'router_name' => 'admin_article_category',
     'code' => 'admin_operation_article_category',
-    'weight' => 2200,
+    'weight' => 1900,
     'children' => 
     array (
       0 => 'admin_operation_category_create',
@@ -375,7 +321,7 @@ return array (
     'group' => 2,
     'blank' => 1,
     'code' => 'admin_operation_group_create',
-    'weight' => 2300,
+    'weight' => 2000,
     'children' => 
     array (
     ),
@@ -386,7 +332,7 @@ return array (
     'parent' => 'admin_operation_group',
     'router_name' => 'admin_group',
     'code' => 'admin_operation_group_manage',
-    'weight' => 2400,
+    'weight' => 2100,
     'children' => 
     array (
       0 => 'admin_operation_group_create',
@@ -399,7 +345,7 @@ return array (
     'parent' => 'admin_operation_group',
     'router_name' => 'admin_groupThread',
     'code' => 'admin_operation_group_thread',
-    'weight' => 2500,
+    'weight' => 2200,
     'children' => 
     array (
     ),
@@ -411,7 +357,7 @@ return array (
     'parent' => 'admin_course',
     'router_name' => 'admin_course',
     'code' => 'admin_course_show',
-    'weight' => 2600,
+    'weight' => 2300,
     'children' => 
     array (
       0 => 'admin_course_manage',
@@ -428,7 +374,7 @@ return array (
     'group' => 2,
     'blank' => 1,
     'code' => 'admin_course_add',
-    'weight' => 2700,
+    'weight' => 2400,
     'children' => 
     array (
     ),
@@ -445,7 +391,7 @@ return array (
     'group' => 2,
     'blank' => 1,
     'code' => 'admin_live_course_add',
-    'weight' => 2800,
+    'weight' => 2500,
     'children' => 
     array (
     ),
@@ -459,7 +405,7 @@ return array (
       'status' => 'underway',
     ),
     'code' => 'admin_live_course',
-    'weight' => 2900,
+    'weight' => 2600,
     'children' => 
     array (
     ),
@@ -471,7 +417,7 @@ return array (
     'parent' => 'admin_course',
     'before' => 'admin_course_thread',
     'code' => 'admin_classroom',
-    'weight' => 2999,
+    'weight' => 2699,
     'children' => 
     array (
       0 => 'admin_classroom_manage',
@@ -485,7 +431,7 @@ return array (
     'parent' => 'admin_course',
     'router_name' => 'admin_thread',
     'code' => 'admin_course_thread',
-    'weight' => 3000,
+    'weight' => 2700,
     'children' => 
     array (
       0 => 'admin_course_thread_manage',
@@ -499,7 +445,7 @@ return array (
     'parent' => 'admin_course_thread',
     'router_name' => 'admin_thread',
     'code' => 'admin_course_thread_manage',
-    'weight' => 3100,
+    'weight' => 2800,
     'children' => 
     array (
     ),
@@ -515,7 +461,7 @@ return array (
       'postStatus' => 'unPosted',
     ),
     'code' => 'admin_course_question',
-    'weight' => 3200,
+    'weight' => 2900,
     'children' => 
     array (
     ),
@@ -527,7 +473,7 @@ return array (
     'parent' => 'admin_course',
     'router_name' => 'admin_note',
     'code' => 'admin_course_note',
-    'weight' => 3300,
+    'weight' => 3000,
     'children' => 
     array (
     ),
@@ -539,7 +485,7 @@ return array (
     'parent' => 'admin_course',
     'router_name' => 'admin_review',
     'code' => 'admin_course_review',
-    'weight' => 3400,
+    'weight' => 3100,
     'children' => 
     array (
       0 => 'admin_course_review_tab',
@@ -552,7 +498,7 @@ return array (
     'name' => '分类管理',
     'parent' => 'admin_course',
     'code' => 'admin_course_category',
-    'weight' => 3500,
+    'weight' => 3200,
     'children' => 
     array (
       0 => 'admin_category_create',
@@ -571,7 +517,7 @@ return array (
     'group' => 2,
     'mode' => 'modal',
     'code' => 'admin_category_create',
-    'weight' => 3600,
+    'weight' => 3300,
     'children' => 
     array (
     ),
@@ -582,7 +528,7 @@ return array (
     'parent' => 'admin_course',
     'router_name' => 'admin_tag',
     'code' => 'admin_course_tag',
-    'weight' => 3700,
+    'weight' => 3400,
     'children' => 
     array (
       0 => 'admin_course_tag_manage',
@@ -596,7 +542,7 @@ return array (
     'parent' => 'admin_course_tag',
     'router_name' => 'admin_tag',
     'code' => 'admin_course_tag_manage',
-    'weight' => 3800,
+    'weight' => 3500,
     'children' => 
     array (
     ),
@@ -610,7 +556,7 @@ return array (
     'mode' => 'modal',
     'group' => 2,
     'code' => 'admin_course_tag_add',
-    'weight' => 3900,
+    'weight' => 3600,
     'children' => 
     array (
     ),
@@ -621,7 +567,7 @@ return array (
     'parent' => 'admin_user',
     'router_name' => 'admin_user',
     'code' => 'admin_user_show',
-    'weight' => 4000,
+    'weight' => 3700,
     'children' => 
     array (
       0 => 'admin_user_manage',
@@ -636,7 +582,7 @@ return array (
     'mode' => 'modal',
     'group' => 2,
     'code' => 'admin_user_create',
-    'weight' => 4100,
+    'weight' => 3800,
     'children' => 
     array (
     ),
@@ -647,7 +593,7 @@ return array (
     'parent' => 'admin_user_show',
     'router_name' => 'admin_user',
     'code' => 'admin_user_manage',
-    'weight' => 4200,
+    'weight' => 3900,
     'children' => 
     array (
       0 => 'admin_user_create',
@@ -659,7 +605,7 @@ return array (
     'name' => '登录日志',
     'parent' => 'admin_user_show',
     'code' => 'admin_login_record',
-    'weight' => 4300,
+    'weight' => 4000,
     'children' => 
     array (
     ),
@@ -670,7 +616,7 @@ return array (
     'name' => '教师管理',
     'parent' => 'admin_user',
     'code' => 'admin_teacher',
-    'weight' => 4400,
+    'weight' => 4100,
     'children' => 
     array (
     ),
@@ -685,7 +631,7 @@ return array (
       'approvalStatus' => 'approving',
     ),
     'code' => 'admin_approval_approvals',
-    'weight' => 4500,
+    'weight' => 4200,
     'children' => 
     array (
     ),
@@ -696,7 +642,7 @@ return array (
     'name' => '私信管理',
     'parent' => 'admin_user',
     'code' => 'admin_message',
-    'weight' => 4600,
+    'weight' => 4300,
     'children' => 
     array (
     ),
@@ -708,7 +654,7 @@ return array (
     'parent' => 'admin_course_show',
     'router_name' => 'admin_course',
     'code' => 'admin_course_manage',
-    'weight' => 4700,
+    'weight' => 4400,
     'children' => 
     array (
       0 => 'admin_course_add',
@@ -722,7 +668,7 @@ return array (
     'parent' => 'admin_course_show',
     'router_name' => 'admin_course_recommend_list',
     'code' => 'admin_course_recommend',
-    'weight' => 4800,
+    'weight' => 4500,
     'children' => 
     array (
     ),
@@ -733,7 +679,7 @@ return array (
     'name' => '课程统计',
     'parent' => 'admin_course_show',
     'code' => 'admin_course_data',
-    'weight' => 4900,
+    'weight' => 4600,
     'children' => 
     array (
     ),
@@ -745,7 +691,7 @@ return array (
     'parent' => 'admin_order',
     'router_name' => 'admin_course_order_manage',
     'code' => 'admin_course_order',
-    'weight' => 5000,
+    'weight' => 4700,
     'children' => 
     array (
       0 => 'admin_course_order_query',
@@ -758,7 +704,7 @@ return array (
     'parent' => 'admin_order',
     'after' => 'admin_course_order',
     'code' => 'admin_classroom_order',
-    'weight' => 5001,
+    'weight' => 4701,
     'children' => 
     array (
     ),
@@ -769,7 +715,7 @@ return array (
     'name' => '虚拟币订单',
     'parent' => 'admin_order',
     'code' => 'admin_coin_orders',
-    'weight' => 5100,
+    'weight' => 4800,
     'children' => 
     array (
     ),
@@ -781,7 +727,7 @@ return array (
     'parent' => 'admin_coin_order',
     'router_name' => 'admin_coin_orders',
     'code' => 'admin_coin_order_query',
-    'weight' => 5200,
+    'weight' => 4900,
     'children' => 
     array (
     ),
@@ -793,7 +739,7 @@ return array (
     'parent' => 'admin_course_order',
     'router_name' => 'admin_course_order_manage',
     'code' => 'admin_course_order_query',
-    'weight' => 5300,
+    'weight' => 5000,
     'children' => 
     array (
     ),
@@ -805,7 +751,7 @@ return array (
     'parent' => 'admin_finance',
     'router_name' => 'admin_bill',
     'code' => 'admin_bills',
-    'weight' => 5400,
+    'weight' => 5100,
     'children' => 
     array (
       0 => 'admin_cash_bill',
@@ -819,7 +765,7 @@ return array (
     'parent' => 'admin_bills',
     'router_name' => 'admin_bill',
     'code' => 'admin_cash_bill',
-    'weight' => 5500,
+    'weight' => 5200,
     'children' => 
     array (
     ),
@@ -830,7 +776,7 @@ return array (
     'name' => '虚拟币账单',
     'parent' => 'admin_bills',
     'code' => 'admin_coin_records',
-    'weight' => 5600,
+    'weight' => 5300,
     'children' => 
     array (
     ),
@@ -842,7 +788,7 @@ return array (
     'parent' => 'admin_finance',
     'router_name' => 'admin_coin_user_records',
     'code' => 'admin_coin_user',
-    'weight' => 5700,
+    'weight' => 5400,
     'children' => 
     array (
       0 => 'admin_coin_user_records',
@@ -855,7 +801,7 @@ return array (
     'parent' => 'admin_coin_user',
     'router_name' => 'admin_coin_user_records',
     'code' => 'admin_coin_user_records',
-    'weight' => 5800,
+    'weight' => 5500,
     'children' => 
     array (
     ),
@@ -872,7 +818,7 @@ return array (
       'status' => 'created',
     ),
     'code' => 'admin_course_refunds',
-    'weight' => 5900,
+    'weight' => 5600,
     'children' => 
     array (
       0 => 'admin_course_refunds_manage',
@@ -891,7 +837,7 @@ return array (
     ),
     'after' => 'admin_course_refunds',
     'code' => 'admin_classroom_refunds',
-    'weight' => 5901,
+    'weight' => 5601,
     'children' => 
     array (
       0 => 'admin_classroom_refunds_manage',
@@ -909,7 +855,7 @@ return array (
       'status' => 'created',
     ),
     'code' => 'admin_course_refunds_manage',
-    'weight' => 6000,
+    'weight' => 5700,
     'children' => 
     array (
     ),
@@ -921,7 +867,7 @@ return array (
     'parent' => 'admin_system',
     'router_name' => 'admin_setting_site',
     'code' => 'admin_setting',
-    'weight' => 6100,
+    'weight' => 5800,
     'children' => 
     array (
       0 => 'admin_setting_massage',
@@ -941,7 +887,7 @@ return array (
     'parent' => 'admin_setting',
     'router_name' => 'admin_setting_site',
     'code' => 'admin_setting_massage',
-    'weight' => 6200,
+    'weight' => 5900,
     'children' => 
     array (
     ),
@@ -953,7 +899,7 @@ return array (
     'parent' => 'admin_setting',
     'router_name' => 'admin_setting_theme',
     'code' => 'admin_setting_theme',
-    'weight' => 6300,
+    'weight' => 6000,
     'children' => 
     array (
     ),
@@ -964,7 +910,7 @@ return array (
     'name' => '邮件服务器设置',
     'parent' => 'admin_setting',
     'code' => 'admin_setting_mailer',
-    'weight' => 6400,
+    'weight' => 6100,
     'children' => 
     array (
     ),
@@ -980,7 +926,7 @@ return array (
       'type' => 'top',
     ),
     'code' => 'admin_top_navigation',
-    'weight' => 6500,
+    'weight' => 6200,
     'children' => 
     array (
     ),
@@ -996,7 +942,7 @@ return array (
       'type' => 'foot',
     ),
     'code' => 'admin_foot_navigation',
-    'weight' => 6600,
+    'weight' => 6300,
     'children' => 
     array (
     ),
@@ -1007,7 +953,7 @@ return array (
     'name' => '客服',
     'parent' => 'admin_setting',
     'code' => 'admin_setting_consult_setting',
-    'weight' => 6700,
+    'weight' => 6400,
     'children' => 
     array (
     ),
@@ -1018,7 +964,7 @@ return array (
     'name' => '侧边栏',
     'parent' => 'admin_setting',
     'code' => 'admin_setting_es_bar',
-    'weight' => 6800,
+    'weight' => 6500,
     'children' => 
     array (
     ),
@@ -1029,7 +975,7 @@ return array (
     'name' => '分享',
     'parent' => 'admin_setting',
     'code' => 'admin_setting_share',
-    'weight' => 6900,
+    'weight' => 6600,
     'children' => 
     array (
     ),
@@ -1041,7 +987,7 @@ return array (
     'parent' => 'admin_system',
     'router_name' => 'admin_setting_auth',
     'code' => 'admin_setting_user',
-    'weight' => 7000,
+    'weight' => 6700,
     'children' => 
     array (
       0 => 'admin_user_auth',
@@ -1058,7 +1004,7 @@ return array (
     'parent' => 'admin_setting_user',
     'router_name' => 'admin_setting_auth',
     'code' => 'admin_user_auth',
-    'weight' => 7100,
+    'weight' => 6800,
     'children' => 
     array (
     ),
@@ -1069,7 +1015,7 @@ return array (
     'name' => '登录',
     'parent' => 'admin_setting_user',
     'code' => 'admin_setting_login_bind',
-    'weight' => 7200,
+    'weight' => 6900,
     'children' => 
     array (
     ),
@@ -1080,7 +1026,7 @@ return array (
     'name' => '用户中心',
     'parent' => 'admin_setting_user',
     'code' => 'admin_setting_user_center',
-    'weight' => 7300,
+    'weight' => 7000,
     'children' => 
     array (
     ),
@@ -1091,7 +1037,7 @@ return array (
     'name' => '用户信息设置',
     'parent' => 'admin_setting_user',
     'code' => 'admin_setting_user_fields',
-    'weight' => 7400,
+    'weight' => 7100,
     'children' => 
     array (
     ),
@@ -1103,7 +1049,7 @@ return array (
     'parent' => 'admin_setting_user',
     'router_name' => 'admin_setting_avatar',
     'code' => 'admin_user_avatar',
-    'weight' => 7500,
+    'weight' => 7200,
     'children' => 
     array (
     ),
@@ -1114,7 +1060,7 @@ return array (
     'name' => '课程设置',
     'parent' => 'admin_system',
     'code' => 'admin_setting_course_setting',
-    'weight' => 7600,
+    'weight' => 7300,
     'children' => 
     array (
       0 => 'admin_setting_course',
@@ -1131,7 +1077,7 @@ return array (
     'parent' => 'admin_setting_course_setting',
     'router_name' => 'admin_setting_course_setting',
     'code' => 'admin_setting_course',
-    'weight' => 7700,
+    'weight' => 7400,
     'children' => 
     array (
     ),
@@ -1143,7 +1089,7 @@ return array (
     'parent' => 'admin_setting_course_setting',
     'router_name' => 'admin_setting_live_course_setting',
     'code' => 'admin_setting_live_course',
-    'weight' => 7800,
+    'weight' => 7500,
     'children' => 
     array (
     ),
@@ -1155,7 +1101,7 @@ return array (
     'parent' => 'admin_setting_course_setting',
     'after' => 'admin_setting_live_course',
     'code' => 'admin_classroom_setting',
-    'weight' => 7801,
+    'weight' => 7501,
     'children' => 
     array (
     ),
@@ -1166,7 +1112,7 @@ return array (
     'name' => '题库',
     'parent' => 'admin_setting_course_setting',
     'code' => 'admin_setting_questions_setting',
-    'weight' => 7900,
+    'weight' => 7600,
     'children' => 
     array (
     ),
@@ -1177,7 +1123,7 @@ return array (
     'name' => '默认图片',
     'parent' => 'admin_setting_course_setting',
     'code' => 'admin_setting_course_avatar',
-    'weight' => 8000,
+    'weight' => 7700,
     'children' => 
     array (
     ),
@@ -1189,7 +1135,7 @@ return array (
     'parent' => 'admin_system',
     'router_name' => 'admin_article_setting',
     'code' => 'admin_setting_operation',
-    'weight' => 8100,
+    'weight' => 7800,
     'children' => 
     array (
       0 => 'admin_article_setting',
@@ -1202,7 +1148,7 @@ return array (
     'name' => '资讯',
     'parent' => 'admin_setting_operation',
     'code' => 'admin_article_setting',
-    'weight' => 8200,
+    'weight' => 7900,
     'children' => 
     array (
     ),
@@ -1213,7 +1159,7 @@ return array (
     'name' => '小组',
     'parent' => 'admin_setting_operation',
     'code' => 'admin_group_set',
-    'weight' => 8300,
+    'weight' => 8000,
     'children' => 
     array (
     ),
@@ -1225,7 +1171,7 @@ return array (
     'parent' => 'admin_system',
     'router_name' => 'admin_setting_payment',
     'code' => 'admin_setting_finance',
-    'weight' => 8400,
+    'weight' => 8100,
     'children' => 
     array (
       0 => 'admin_payment',
@@ -1240,7 +1186,7 @@ return array (
     'parent' => 'admin_setting_finance',
     'router_name' => 'admin_setting_payment',
     'code' => 'admin_payment',
-    'weight' => 8500,
+    'weight' => 8200,
     'children' => 
     array (
     ),
@@ -1252,7 +1198,7 @@ return array (
     'parent' => 'admin_setting_finance',
     'router_name' => 'admin_coin_settings',
     'code' => '_admin_coin_settings',
-    'weight' => 8600,
+    'weight' => 8300,
     'children' => 
     array (
       0 => 'admin_coin_settings',
@@ -1265,7 +1211,7 @@ return array (
     'name' => '虚拟币设置',
     'parent' => '_admin_coin_settings',
     'code' => 'admin_coin_settings',
-    'weight' => 8700,
+    'weight' => 8400,
     'children' => 
     array (
     ),
@@ -1277,7 +1223,7 @@ return array (
     'fullname' => '虚拟币使用方式设置',
     'parent' => '_admin_coin_settings',
     'code' => 'admin_coin_model',
-    'weight' => 8800,
+    'weight' => 8500,
     'children' => 
     array (
     ),
@@ -1288,7 +1234,7 @@ return array (
     'name' => '退款',
     'parent' => 'admin_setting_finance',
     'code' => 'admin_setting_refund',
-    'weight' => 8900,
+    'weight' => 8600,
     'children' => 
     array (
     ),
@@ -1299,7 +1245,7 @@ return array (
     'name' => '移动端设置',
     'parent' => 'admin_system',
     'code' => 'admin_setting_mobile',
-    'weight' => 9000,
+    'weight' => 8700,
     'children' => 
     array (
     ),
@@ -1311,7 +1257,7 @@ return array (
     'parent' => 'admin_system',
     'group' => 2,
     'code' => 'admin_optimize',
-    'weight' => 9100,
+    'weight' => 8800,
     'children' => 
     array (
     ),
@@ -1322,7 +1268,7 @@ return array (
     'parent' => 'admin_system',
     'group' => 2,
     'code' => 'admin_jobs',
-    'weight' => 9200,
+    'weight' => 8900,
     'children' => 
     array (
     ),
@@ -1333,7 +1279,7 @@ return array (
     'parent' => 'admin_system',
     'group' => 2,
     'code' => 'admin_setting_ip_blacklist',
-    'weight' => 9300,
+    'weight' => 9000,
     'children' => 
     array (
     ),
@@ -1344,7 +1290,7 @@ return array (
     'parent' => 'admin_system',
     'group' => 2,
     'code' => 'admin_logs',
-    'weight' => 9400,
+    'weight' => 9100,
     'children' => 
     array (
       0 => 'admin_logs_query',
@@ -1357,7 +1303,7 @@ return array (
     'parent' => 'admin_logs',
     'router_name' => 'admin_logs',
     'code' => 'admin_logs_query',
-    'weight' => 9500,
+    'weight' => 9200,
     'children' => 
     array (
     ),
@@ -1368,7 +1314,7 @@ return array (
     'name' => '程序运行日志',
     'parent' => 'admin_logs',
     'code' => 'admin_logs_prod',
-    'weight' => 9600,
+    'weight' => 9300,
     'children' => 
     array (
     ),
@@ -1379,7 +1325,7 @@ return array (
     'name' => '我的教育云',
     'parent' => 'admin_app',
     'code' => 'admin_my_cloud',
-    'weight' => 9700,
+    'weight' => 9400,
     'children' => 
     array (
       0 => 'admin_cloud_bill',
@@ -1391,7 +1337,7 @@ return array (
     'name' => '设置',
     'parent' => 'admin_app',
     'code' => 'admin_setting_cloud_video',
-    'weight' => 9800,
+    'weight' => 9500,
     'children' => 
     array (
       0 => 'admin_cloud_video_setting',
@@ -1409,7 +1355,7 @@ return array (
       'postStatus' => 'all',
     ),
     'code' => 'admin_app_center_show',
-    'weight' => 9900,
+    'weight' => 9600,
     'children' => 
     array (
       0 => 'admin_app_center',
@@ -1424,7 +1370,7 @@ return array (
     'name' => '授权码',
     'parent' => 'admin_app',
     'code' => 'admin_setting_cloud',
-    'weight' => 10000,
+    'weight' => 9700,
     'children' => 
     array (
     ),
@@ -1440,7 +1386,7 @@ return array (
       'postStatus' => 'all',
     ),
     'code' => 'admin_app_center',
-    'weight' => 10100,
+    'weight' => 9800,
     'children' => 
     array (
     ),
@@ -1455,7 +1401,7 @@ return array (
       'postStatus' => 'all',
     ),
     'code' => 'admin_app_installed',
-    'weight' => 10200,
+    'weight' => 9900,
     'children' => 
     array (
     ),
@@ -1467,7 +1413,7 @@ return array (
     'parent' => 'admin_app_center_show',
     'class' => 'app-upgrade',
     'code' => 'admin_app_upgrades',
-    'weight' => 10300,
+    'weight' => 10000,
     'children' => 
     array (
     ),
@@ -1478,7 +1424,7 @@ return array (
     'name' => '更新日志',
     'parent' => 'admin_app_center_show',
     'code' => 'admin_app_logs',
-    'weight' => 10400,
+    'weight' => 10100,
     'children' => 
     array (
     ),
@@ -1490,7 +1436,7 @@ return array (
     'parent' => 'admin_setting_cloud_video',
     'router_name' => 'admin_setting_cloud_video',
     'code' => 'admin_cloud_video_setting',
-    'weight' => 10500,
+    'weight' => 10200,
     'children' => 
     array (
     ),
@@ -1501,7 +1447,7 @@ return array (
     'name' => '云短信设置',
     'parent' => 'admin_setting_cloud_video',
     'code' => 'admin_edu_cloud_sms',
-    'weight' => 10600,
+    'weight' => 10300,
     'children' => 
     array (
     ),
@@ -1513,7 +1459,7 @@ return array (
     'parent' => 'admin_my_cloud',
     'router_name' => 'admin_cloud_bill',
     'code' => 'admin_cloud_bill',
-    'weight' => 10700,
+    'weight' => 10400,
     'children' => 
     array (
     ),
@@ -1525,7 +1471,7 @@ return array (
     'parent' => 'admin_batch_notification',
     'group' => 2,
     'code' => 'admin_batch_notification_create',
-    'weight' => 10900,
+    'weight' => 10600,
     'children' => 
     array (
     ),
@@ -1537,7 +1483,7 @@ return array (
     'mode' => 'modal',
     'group' => 2,
     'code' => 'admin_announcement_create',
-    'weight' => 11100,
+    'weight' => 10800,
     'children' => 
     array (
     ),
@@ -1549,7 +1495,7 @@ return array (
     'router_name' => 'admin_review',
     'group' => 1,
     'code' => 'admin_course_review_tab',
-    'weight' => 11200,
+    'weight' => 10900,
     'children' => 
     array (
     ),
@@ -1560,7 +1506,7 @@ return array (
     'parent' => 'admin_classroom',
     'router_name' => 'admin_classroom',
     'code' => 'admin_classroom_manage',
-    'weight' => 11400,
+    'weight' => 11100,
     'children' => 
     array (
       0 => 'admin_classroom_create',
@@ -1573,7 +1519,7 @@ return array (
     'parent' => 'admin_classroom',
     'router_name' => 'admin_classroom_recommend_list',
     'code' => 'admin_classroom_recommend',
-    'weight' => 11500,
+    'weight' => 11200,
     'children' => 
     array (
     ),
@@ -1586,7 +1532,7 @@ return array (
     'group' => 2,
     'blank' => true,
     'code' => 'admin_classroom_create',
-    'weight' => 11600,
+    'weight' => 11300,
     'children' => 
     array (
     ),
@@ -1597,7 +1543,7 @@ return array (
     'parent' => 'admin_course_thread',
     'router_name' => 'admin_classroom_thread',
     'code' => 'admin_classroom_thread_manage',
-    'weight' => 11700,
+    'weight' => 11400,
     'children' => 
     array (
     ),
@@ -1614,7 +1560,7 @@ return array (
       'status' => 'created',
     ),
     'code' => 'admin_classroom_refunds_manage',
-    'weight' => 12000,
+    'weight' => 11700,
     'children' => 
     array (
     ),
@@ -1627,7 +1573,7 @@ return array (
     'router_name' => 'admin_classroom_review',
     'group' => 1,
     'code' => 'admin_classroom_review_tab',
-    'weight' => 12200,
+    'weight' => 11900,
     'children' => 
     array (
     ),

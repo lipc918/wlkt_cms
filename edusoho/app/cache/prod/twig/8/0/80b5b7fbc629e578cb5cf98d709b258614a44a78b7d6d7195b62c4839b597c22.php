@@ -30,10 +30,7 @@ class __TwigTemplate_80b5b7fbc629e578cb5cf98d709b258614a44a78b7d6d7195b62c4839b5
             }
         } else {
             // line 6
-            echo "  Powered by <a href=\"http://www.edusoho.com/\" target=\"_blank\">EduSoho v";
-            echo twig_escape_filter($this->env, twig_constant("\\Topxia\\System::VERSION"), "html", null, true);
-            echo "</a>
-  ©2014-2015 <a class=\"mlm\" href=\"http://www.howzhi.com/\" target=\"_blank\">好知网</a>
+            echo "  Powered by <a href=\"http://www.edusoho.com/\" target=\"_blank\">lpc</a> ©2014-2015 
 ";
         }
     }

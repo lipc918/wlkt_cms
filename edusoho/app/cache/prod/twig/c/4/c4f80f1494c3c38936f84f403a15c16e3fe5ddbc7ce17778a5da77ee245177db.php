@@ -192,7 +192,7 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
             // line 77
             echo $this->env->getExtension('routing')->getPath("live_course_explore");
             echo "\" class=\"btn btn-default btn-lg\">
-          更多直播 <i class=\"mrs-o es-icon es-icon-chevronright\"></i>
+          更多直播1 <i class=\"mrs-o es-icon es-icon-chevronright\"></i>
         </a>
       </div>
     </div>
@@ -201,27 +201,23 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
         }
         // line 84
         echo "
-  <!-- 特性 -->
-  ";
-        // line 86
-        echo $this->env->getExtension('topxia_block_twig')->showBlock("jianmo:middle_banner");
-        echo "
+ 
 
 
   <!-- 推荐班级 -->
   ";
-        // line 90
+        // line 89
         $context["RecommendClassrooms"] = $this->env->getExtension('topxia_data_twig')->getData("RecommendClassrooms", array("count" => 4));
-        // line 91
+        // line 90
         echo "  ";
         if ((isset($context["RecommendClassrooms"]) ? $context["RecommendClassrooms"] : null)) {
-            // line 92
+            // line 91
             echo "    <section class=\"class-section\">
       <div class=\"container\">
         <div class=\"text-line\">
           <h5>
             <span>推荐";
-            // line 96
+            // line 95
             echo twig_escape_filter($this->env, _twig_default_filter($this->env->getExtension('topxia_web_twig')->getSetting("classroom.name"), "班级"), "html", null, true);
             echo "</span>
             <div class=\"line\"></div>
@@ -230,7 +226,7 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
         </div>
         <div class=\"recommend-class-list row\">
           ";
-            // line 102
+            // line 101
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["RecommendClassrooms"]) ? $context["RecommendClassrooms"] : null));
             $context['loop'] = array(
@@ -247,11 +243,11 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["_key"] => $context["classroom"]) {
-                // line 103
+                // line 102
                 echo "            <div class=\"col-md-3 col-sm-6\">
                ";
-                // line 104
-                $this->loadTemplate("ClassroomBundle:Classroom:class-grid.html.twig", "TopxiaWebBundle:Default:index.html.twig", 104)->display($context);
+                // line 103
+                $this->loadTemplate("ClassroomBundle:Classroom:class-grid.html.twig", "TopxiaWebBundle:Default:index.html.twig", 103)->display($context);
                 echo " 
             </div>
           ";
@@ -267,15 +263,15 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['classroom'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 107
+            // line 106
             echo "        </div>
         <div class=\"text-center mvl\">
           <a href=\"";
-            // line 109
+            // line 108
             echo $this->env->getExtension('routing')->getPath("classroom_explore");
             echo "\" class=\"btn btn-default btn-lg\">
             更多";
-            // line 110
+            // line 109
             echo twig_escape_filter($this->env, _twig_default_filter($this->env->getExtension('topxia_web_twig')->getSetting("classroom.name"), "班级"), "html", null, true);
             echo " <i class=\"mrs-o es-icon es-icon-chevronright\"></i>
           </a>
@@ -284,16 +280,16 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
     </section>
   ";
         }
-        // line 116
+        // line 115
         echo "
   <!-- 小组动态 -->
   ";
-        // line 118
+        // line 117
         $context["groups"] = $this->env->getExtension('topxia_data_twig')->getData("HotGroup", array("count" => 6));
-        // line 119
+        // line 118
         echo "  ";
         if ((isset($context["groups"]) ? $context["groups"] : null)) {
-            // line 120
+            // line 119
             echo "    <section class=\"group-dynamic\">
       <div class=\"container\">
         <div class=\"text-line gray\">
@@ -305,28 +301,28 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
             <div class=\"panel panel-default index-group\">
               <div class=\"panel-heading\">
                 <a href=\"";
-            // line 130
+            // line 129
             echo $this->env->getExtension('routing')->getPath("group");
             echo "\" class=\"more\"><i class=\"es-icon es-icon-morehoriz\"></i></a>
                 <h3 class=\"panel-title\"><i class=\"es-icon es-icon-whatshot pull-left\"></i>热门小组</h3>
               </div>
               <div class=\"panel-body row\">
                 ";
-            // line 134
+            // line 133
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["groups"]) ? $context["groups"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["group"]) {
-                // line 135
+                // line 134
                 echo "                  <div class=\"media media-group col-md-6 col-sm-4\">
                     <div class=\"media-left\">
                       <a href=\"";
-                // line 137
+                // line 136
                 echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("group_show", array("id" => $this->getAttribute($context["group"], "id", array()))), "html", null, true);
                 echo "\">
                         ";
-                // line 138
+                // line 137
                 if ($this->getAttribute($context["group"], "logo", array())) {
-                    // line 139
+                    // line 138
                     echo "                          <img class=\"avatar-square-md\" src=\"";
                     echo twig_escape_filter($this->env, $this->env->getExtension('topxia_web_twig')->getFilePath($this->getAttribute($context["group"], "logo", array())), "html", null, true);
                     echo "\" alt=\"";
@@ -334,7 +330,7 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
                     echo "\">
                         ";
                 } else {
-                    // line 141
+                    // line 140
                     echo "                          <img class=\"avatar-square-md\" src=\"";
                     echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("assets/img/default/group.png"), "html", null, true);
                     echo "\"  alt=\"";
@@ -342,28 +338,28 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
                     echo "\">
                         ";
                 }
-                // line 143
+                // line 142
                 echo "                      </a>
                     </div>
                     <div class=\"media-body\">
                       <div class=\"title\">
                         <a class=\"link-light\" href=\"";
-                // line 147
+                // line 146
                 echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("group_show", array("id" => $this->getAttribute($context["group"], "id", array()))), "html", null, true);
                 echo "\">
                           ";
-                // line 148
+                // line 147
                 echo twig_escape_filter($this->env, $this->getAttribute($context["group"], "title", array()), "html", null, true);
                 echo "
                         </a>
                       </div>
                       <div class=\"metas\">
                         <span><i class=\"es-icon es-icon-people\"></i>";
-                // line 152
+                // line 151
                 echo twig_escape_filter($this->env, $this->getAttribute($context["group"], "memberNum", array()), "html", null, true);
                 echo "</span>
                         <span><i class=\"es-icon es-icon-textsms\"></i>";
-                // line 153
+                // line 152
                 echo twig_escape_filter($this->env, $this->getAttribute($context["group"], "threadNum", array()), "html", null, true);
                 echo "</span>
                       </div>
@@ -374,7 +370,7 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['group'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 158
+            // line 157
             echo "              </div>
             </div>
           </div>
@@ -387,38 +383,38 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
               </div>
               <div class=\"panel-body\">
                 ";
-            // line 169
+            // line 168
             $context["statuses"] = $this->env->getExtension('topxia_data_twig')->getData("LatestStatuses", array("mode" => "simple", "count" => 4, "private" => 0));
-            // line 170
+            // line 169
             echo "
                 ";
-            // line 171
+            // line 170
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["statuses"]) ? $context["statuses"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["status"]) {
-                // line 172
+                // line 171
                 echo "                  <div class=\"media media-dynamic\">
                     <div class=\"media-left\">
                       ";
-                // line 174
+                // line 173
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["web_macro"]) ? $context["web_macro"] : null), "user_avatar", array(0 => $this->getAttribute($context["status"], "user", array()), 1 => "", 2 => "avatar-sm"), "method"), "html", null, true);
                 echo "
                     </div>
                     <div class=\"media-body\">
                       <div class=\"title\">
                         ";
-                // line 178
+                // line 177
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["web_macro"]) ? $context["web_macro"] : null), "user_link", array(0 => $this->getAttribute($context["status"], "user", array())), "method"), "html", null, true);
                 echo "
                       </div>
                       <div class=\"content\">
                         ";
-                // line 181
+                // line 180
                 echo $this->getAttribute($context["status"], "message", array());
                 echo "
                       </div>
                       <span class=\"date\">";
-                // line 183
+                // line 182
                 echo twig_escape_filter($this->env, $this->env->getExtension('topxia_web_twig')->smarttimeFilter($this->getAttribute($context["status"], "createdTime", array())), "html", null, true);
                 echo "</span>
                     </div>
@@ -428,7 +424,7 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['status'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 187
+            // line 186
             echo "              </div>
             </div>
           </div>
@@ -437,16 +433,16 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
     </section>
   ";
         }
-        // line 194
+        // line 193
         echo "
   <!-- 推荐教师 -->
   ";
-        // line 196
+        // line 195
         $context["teachers"] = $this->env->getExtension('topxia_data_twig')->getData("RecommendTeachers", array("count" => 4));
-        // line 197
+        // line 196
         echo "  ";
         if ((isset($context["teachers"]) ? $context["teachers"] : null)) {
-            // line 198
+            // line 197
             echo "  <section class=\"recommend-teacher\">
     <div class=\"container\">
       <div class=\"text-line\">
@@ -455,7 +451,7 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
       </div>
       <div class=\"row\">
         ";
-            // line 205
+            // line 204
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["teachers"]) ? $context["teachers"] : null));
             $context['loop'] = array(
@@ -472,18 +468,18 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["_key"] => $context["teacher"]) {
-                // line 206
+                // line 205
                 echo "        ";
                 $context["profile"] = $this->getAttribute($context["teacher"], "profile", array());
-                // line 207
+                // line 206
                 echo "        ";
                 $context["isFollowed"] = $this->getAttribute($context["teacher"], "isFollowed", array());
-                // line 208
+                // line 207
                 echo "          <div class=\"col-md-3 col-sm-6\">
             ";
+                // line 208
+                $this->loadTemplate("TopxiaWebBundle:Teacher:teacher-item.html.twig", "TopxiaWebBundle:Default:index.html.twig", 208)->display($context);
                 // line 209
-                $this->loadTemplate("TopxiaWebBundle:Teacher:teacher-item.html.twig", "TopxiaWebBundle:Default:index.html.twig", 209)->display($context);
-                // line 210
                 echo "          </div>
         ";
                 ++$context['loop']['index0'];
@@ -498,11 +494,11 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['teacher'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 212
+            // line 211
             echo "      </div>
       <div class=\"text-center mvl\">
         <a href=\"";
-            // line 214
+            // line 213
             echo $this->env->getExtension('routing')->getPath("teacher");
             echo "\" class=\"btn btn-default btn-lg\">
           更多教师 <i class=\"mrs-o es-icon es-icon-chevronright\"></i>
@@ -512,7 +508,7 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
   </section>
   ";
         }
-        // line 221
+        // line 220
         echo "
 ";
     }
@@ -529,6 +525,6 @@ class __TwigTemplate_c4f80f1494c3c38936f84f403a15c16e3fe5ddbc7ce17778a5da77ee245
 
     public function getDebugInfo()
     {
-        return array (  516 => 221,  506 => 214,  502 => 212,  487 => 210,  485 => 209,  482 => 208,  479 => 207,  476 => 206,  459 => 205,  450 => 198,  447 => 197,  445 => 196,  441 => 194,  432 => 187,  422 => 183,  417 => 181,  411 => 178,  404 => 174,  400 => 172,  396 => 171,  393 => 170,  391 => 169,  378 => 158,  367 => 153,  363 => 152,  356 => 148,  352 => 147,  346 => 143,  338 => 141,  330 => 139,  328 => 138,  324 => 137,  320 => 135,  316 => 134,  309 => 130,  297 => 120,  294 => 119,  292 => 118,  288 => 116,  279 => 110,  275 => 109,  271 => 107,  254 => 104,  251 => 103,  234 => 102,  225 => 96,  219 => 92,  216 => 91,  214 => 90,  207 => 86,  203 => 84,  193 => 77,  188 => 74,  185 => 73,  167 => 60,  162 => 59,  159 => 58,  157 => 57,  154 => 56,  138 => 53,  131 => 49,  124 => 44,  113 => 35,  110 => 34,  108 => 33,  105 => 32,  103 => 31,  100 => 30,  83 => 29,  73 => 21,  70 => 20,  68 => 19,  65 => 18,  63 => 17,  56 => 13,  52 => 11,  49 => 10,  43 => 4,  37 => 3,  33 => 1,  31 => 8,  29 => 7,  27 => 6,  11 => 1,);
+        return array (  512 => 220,  502 => 213,  498 => 211,  483 => 209,  481 => 208,  478 => 207,  475 => 206,  472 => 205,  455 => 204,  446 => 197,  443 => 196,  441 => 195,  437 => 193,  428 => 186,  418 => 182,  413 => 180,  407 => 177,  400 => 173,  396 => 171,  392 => 170,  389 => 169,  387 => 168,  374 => 157,  363 => 152,  359 => 151,  352 => 147,  348 => 146,  342 => 142,  334 => 140,  326 => 138,  324 => 137,  320 => 136,  316 => 134,  312 => 133,  305 => 129,  293 => 119,  290 => 118,  288 => 117,  284 => 115,  275 => 109,  271 => 108,  267 => 106,  250 => 103,  247 => 102,  230 => 101,  221 => 95,  215 => 91,  212 => 90,  210 => 89,  203 => 84,  193 => 77,  188 => 74,  185 => 73,  167 => 60,  162 => 59,  159 => 58,  157 => 57,  154 => 56,  138 => 53,  131 => 49,  124 => 44,  113 => 35,  110 => 34,  108 => 33,  105 => 32,  103 => 31,  100 => 30,  83 => 29,  73 => 21,  70 => 20,  68 => 19,  65 => 18,  63 => 17,  56 => 13,  52 => 11,  49 => 10,  43 => 4,  37 => 3,  33 => 1,  31 => 8,  29 => 7,  27 => 6,  11 => 1,);
     }
 }

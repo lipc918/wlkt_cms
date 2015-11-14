@@ -146,41 +146,30 @@ class __TwigTemplate_407935ddc3209233bc1e23e018935e3c3d6153d2d7932a3ef863b12d39f
     </div>
   </div>
 
-  <div class=\"row\">
-    ";
-            // line 81
-            echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("TopxiaAdminBundle:Default:userCoinsRecordsBlock"));
-            echo "
-  </div>
+ 
 
   <div class=\"row\">
     ";
-            // line 85
+            // line 83
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("TopxiaAdminBundle:Default:unsolvedQuestionsBlock"));
             echo "
   </div>
 
-  <div class=\"row\">
-    ";
-            // line 89
-            echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("TopxiaAdminBundle:Default:latestPaidOrdersBlock"));
-            echo "
-  </div>
 
 ";
         } else {
-            // line 93
+            // line 88
             echo "  <div class=\"row\">
     <div class=\"col-md-12\">
       <h4>欢迎来到";
-            // line 95
+            // line 90
             echo twig_escape_filter($this->env, $this->env->getExtension('topxia_web_twig')->getSetting("site.name"), "html", null, true);
             echo "管理后台</h4>
     </div>
   </div>
 ";
         }
-        // line 99
+        // line 94
         echo "
 ";
     }
@@ -197,6 +186,6 @@ class __TwigTemplate_407935ddc3209233bc1e23e018935e3c3d6153d2d7932a3ef863b12d39f
 
     public function getDebugInfo()
     {
-        return array (  184 => 99,  177 => 95,  173 => 93,  166 => 89,  159 => 85,  152 => 81,  137 => 69,  133 => 68,  128 => 65,  117 => 57,  112 => 54,  109 => 53,  97 => 34,  90 => 32,  81 => 25,  75 => 22,  72 => 21,  70 => 20,  60 => 15,  55 => 12,  53 => 11,  46 => 7,  43 => 6,  40 => 5,  34 => 2,  30 => 1,  28 => 4,  26 => 3,  11 => 1,);
+        return array (  173 => 94,  166 => 90,  162 => 88,  154 => 83,  137 => 69,  133 => 68,  128 => 65,  117 => 57,  112 => 54,  109 => 53,  97 => 34,  90 => 32,  81 => 25,  75 => 22,  72 => 21,  70 => 20,  60 => 15,  55 => 12,  53 => 11,  46 => 7,  43 => 6,  40 => 5,  34 => 2,  30 => 1,  28 => 4,  26 => 3,  11 => 1,);
     }
 }

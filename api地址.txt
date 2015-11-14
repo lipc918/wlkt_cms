@@ -1,0 +1,13 @@
+开发指南:http://open.edusoho.com/doc/v1/31Development-Guide.html
+
+开发示例:http://open.edusoho.com/doc/v1/32Development-Demo.html
+
+API文档:http://open.edusoho.com/doc/v1/33api-doc.html
+
+【授权】EduSoho二次开发文档(百度文库):
+http://wenku.baidu.com/link?url=2uIM3FfthGYqxhaZXciot2c-JPwcv-Gb3nJV-lOc40iwu_e_st5uGJOxJtFZ7yQ6FiW6Pv3TS6tKumWVP7jI718opRX1eQM1NRfr-DyRHYe
+
+使用及功能介绍文档：
+1、网校系统解决方案（EduSoho网校系统使用说明书 v4.4.2）:http://www.docin.com/p-1117499518.html
+
+2、EduSoho 10 用户使用手册:http://www.doc88.com/p-2384354564299.html

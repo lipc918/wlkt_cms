@@ -7,18 +7,7 @@ admin_user:
 admin_course:
     name: 课程
     parent: admin
-admin_operation:
-    name: 运营
-    parent: admin
-    router_name: admin_article
-admin_order:
-    name: 订单
-    parent: admin
-    router_name: admin_course_order_manage
-admin_finance:
-    name: 账务
-    parent: admin
-    router_name: admin_bill
+
 admin_app:
     name: 教育云
     parent: admin
