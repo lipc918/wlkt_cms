@@ -6,3 +6,7 @@
 5、配置导航栏的模块：F:\wamp2.5\www\wlkt_cms\edusoho\src\Topxia\adminbundle\resources\config\menus_admin.yml
 
 ps:要是修改的文件有效需要先删除缓存文件在刷新才有效（缓存文件路径：\edusoho\app\cache）
+
+云主机首页：http://121.42.172.230/edusoho/web/app.php/  （admin，admin）
+
+源码路径：/var/www/html/edusoho
