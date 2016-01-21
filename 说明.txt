@@ -36,3 +36,6 @@ PHP版本：推荐5.3.17以上
 
 后端：1、Symfony2(http://symfony.com/)
 	  2、Twig:http://twig.sensiolabs.org/documentation
+
+
+EduSoho采用Composer来管理第三方组件的依赖关系，只需在项目中声明所依赖的外部工具库(libraries)，Composer会帮你安装这些依赖的库文件。

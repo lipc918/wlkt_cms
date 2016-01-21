@@ -11,5 +11,7 @@ ps:要是修改的文件有效需要先删除缓存文件在刷新才有效（缓存文件路径：\edusoho\app\
 
 源码路径：/var/www/html/edusoho
 
+seaJs路径：web\assets\libs\seajs
+
 
 主机账号密码：root、qingSong918
