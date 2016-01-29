@@ -5,6 +5,17 @@
 4、首页头部部分页面：F:\wamp2.5\www\wlkt_cms\edusoho\src\Topxia\AdminBundle\Resources\views\layout.html.twig
 5、配置导航栏的模块：F:\wamp2.5\www\wlkt_cms\edusoho\src\Topxia\adminbundle\resources\config\menus_admin.yml
 
+前台文件：
+1、登陆页面：\edusoho\src\Topxia\WebBundle\Resources\views\Login\index.html.twig
+2、教师课程管理页面(我的教学):\edusoho\src\Topxia\WebBundle\Resources\views\MyTeaching\teaching.html.twig
+3、在线考试页面：\edusoho\src\Topxia\WebBundle\Resources\views\QuizQuestionTest\testpaper-show.html.twig
+	controller文件:\edusoho\src\Topxia\WebBundle\Controller\TestpaperController.php
+4、讨论组页面：\edusoho\src\Topxia\WebBundle\Resources\views\Group\index.html.twig
+	controller文件:\edusoho\src\Topxia\WebBundle\Controller\GroupController.php
+
+dao、service层：
+1、\edusoho\src\Topxia\Service\Course\Dao\Impl
+
 ps:要是修改的文件有效需要先删除缓存文件在刷新才有效（缓存文件路径：\edusoho\app\cache）
 
 云主机首页：http://121.42.172.230/edusoho/web/app.php/  （admin，admin）
